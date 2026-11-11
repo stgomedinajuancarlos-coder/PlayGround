@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#101a27">
+  <title>Angel Luis: El camino hacia La Toño House</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand"><div class="brand-mark">AL</div><div><strong>VALLES CITY</strong><small>EL CAMINO A LA TOÑO HOUSE</small></div></div>
+      <div class="stats"><span class="stat cash">¢ <b id="money">0</b></span><span class="stat rep">★ <b id="rep">0</b></span><button class="icon-btn" id="soundBtn" aria-label="Música activada">♫</button><button class="icon-btn" id="mapBtn" aria-label="Abrir mapa">⌖</button><button class="icon-btn" id="bagBtn" aria-label="Inventario">▤</button></div>
+    </header>
+    <section class="game-area">
+      <canvas id="game" width="480" height="320" aria-label="Valles City, juego de aventura"></canvas>
+      <div class="location-pill"><i></i><span id="districtLabel">PLAZA DEL RELOJ</span></div>
+      <div class="quest-chip" id="questChip"><span>✦ MISIÓN</span><b id="questShort">Una idea brillante</b></div>
+      <div class="scene-hint" id="sceneHint">MUEVE: WASD / FLECHAS · HABLA: E</div>
+      <div class="dialogue hidden" id="dialogue"><div class="dialogue-head"><span class="portrait" id="portrait">AL</span><div><b id="speaker">PERSONAJE</b><small id="speakerRole">Valles City</small></div><button id="closeDialogue" aria-label="Cerrar">×</button></div><p id="dialogueText"></p><div id="dialogueChoices" class="choices"></div></div>
+      <div class="toast hidden" id="toast"></div>
+      <div class="overlay hidden" id="mapOverlay"><div class="panel map-panel"><button class="panel-close" data-close>×</button><div class="eyebrow">GUÍA DE LA CIUDAD</div><h2>Valles City</h2><p class="muted">Un mundo pequeño, grandes planes.</p><div class="map-grid" id="mapGrid"></div><button class="primary wide" data-close>SEGUIR EXPLORANDO <span>→</span></button></div></div>
+      <div class="overlay hidden" id="bagOverlay"><div class="panel"><button class="panel-close" data-close>×</button><div class="eyebrow">TUS COSAS</div><h2>Inventario</h2><div id="inventory"></div><div class="upgrade-box"><div><b>Mejora de carisma</b><small>+¢15 por turno completado</small></div><button id="upgradeBtn">¢ 80</button></div><div class="upgrade-box"><div><b>Look de anfitrión</b><small>Un conjunto impecable para tus eventos</small></div><button id="outfitBtn">¢ 50</button></div></div></div>
+      <div class="overlay hidden" id="winOverlay"><div class="panel win-panel"><div class="win-star">✦</div><div class="eyebrow">UN SUEÑO CON LUCES DE NEÓN</div><h2>¡La Toño House abre sus puertas!</h2><p>Valles City tiene un nuevo lugar para reír, bailar y pedir «lo de siempre» aunque sea la primera vez.</p><div class="win-sign">LA TOÑO<br><b>HOUSE</b></div><button class="primary wide" id="celebrateBtn">¡SEGUIR DE FIESTA! <span>✦</span></button></div></div>
+    </section>
+    <footer class="bottom-bar"><div class="quest-progress"><span class="eyebrow">OBJETIVO</span><b id="objective">Encuentra a Diego Andre en la plaza</b><div class="progress-track"><i id="progressFill"></i></div></div><div class="controls"><div class="dpad" aria-label="Controles de movimiento"><button data-dir="up">▲</button><div><button data-dir="left">◀</button><button data-dir="down">▼</button><button data-dir="right">▶</button></div></div><button class="action-btn" id="actionBtn"><span>✦</span><b>HABLAR</b></button></div></footer>
+    <div class="mobile-note">Explora, conversa y convierte tu gran idea en el lugar favorito de la ciudad.</div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,4 +1,15 @@
-# PlayGround
+# Angel Luis: El camino hacia La Toño House
+
+Aventura 2D top-down en pixel art ambientada en Valles City. Juego web sin dependencias: abre `index.html` o sirve la carpeta con `python3 -m http.server 3002`.
+
+## Cómo jugar
+- PC: mover con WASD/flechas; interactuar con **E** (también Espacio). **M** abre el mapa y **I** el inventario.
+- Móvil/tablet: usa la cruceta táctil y el botón **HABLAR**. Mantén el juego en horizontal para más espacio.
+- Habla con Diego, la profe Mora, Juan Antonio y Juan Carlos para avanzar las misiones principales. Lola y Tito dan encargos opcionales.
+- Completa turnos, gana dinero y reputación, compra mejoras en el inventario y lleva ¢350 al solar para construir e inaugurar La Toño House.
+- El progreso se guarda localmente en el navegador. El botón ♫ activa/desactiva la música ambiental.
+
+Las historias de trabajo se presentan como eventos cómicos de compañía y animación para adultos, siempre consensuados y sin escenas explícitas.
 
 <!-- omgithub:readme:start -->
 ## 🚀 Build, play, and remix with OMGithub
